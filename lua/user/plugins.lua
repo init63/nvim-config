@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     use 'editorconfig/editorconfig-vim'
     use 'nvim-lualine/lualine.nvim'
     use 'windwp/nvim-autopairs'
+    use 'matze/vim-move'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',}

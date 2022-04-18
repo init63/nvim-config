@@ -6,3 +6,9 @@ keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 -- prettier
 keymap('v', '<leader>f', '<Plug>(coc-format-selected)', opts)
 keymap('n', '<leader>f', '<Plug>(coc-format-selected)', opts)
+
+-- vim move
+keymap('v', '<C-Down>', '<Plug>MoveBlockDown', opts)
+keymap('v', '<C-Up>', '<Plug>MoveBlockUp', opts)
+keymap('n', '<C-Down>', '<Plug>MoveLineDown', opts)
+keymap('n', '<C-Up>', '<Plug>MoveLineUp', opts)
