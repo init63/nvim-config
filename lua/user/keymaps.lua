@@ -12,3 +12,4 @@ keymap('v', '<C-Down>', '<Plug>MoveBlockDown', opts)
 keymap('v', '<C-Up>', '<Plug>MoveBlockUp', opts)
 keymap('n', '<C-Down>', '<Plug>MoveLineDown', opts)
 keymap('n', '<C-Up>', '<Plug>MoveLineUp', opts)
+
