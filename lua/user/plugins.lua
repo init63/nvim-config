@@ -15,7 +15,8 @@ return require('packer').startup(function(use)
 
     use 'nvim-lua/plenary.nvim'
     use { 'neoclide/coc.nvim', branch = 'release' }
-    use 'numToStr/Comment.nvim'
+    -- use 'numToStr/Comment.nvim'
+    use 'tomtom/tcomment_vim'
     use 'mattn/emmet-vim'
     use 'editorconfig/editorconfig-vim'
     use 'nvim-lualine/lualine.nvim'
