@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     use 'windwp/nvim-autopairs'
     use 'matze/vim-move'
+    use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'seblj/nvim-tabline'
 
     -- treesitter
