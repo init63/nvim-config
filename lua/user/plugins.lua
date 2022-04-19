@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     use 'rebelot/kanagawa.nvim'
 
     use { 'neoclide/coc.nvim', branch = 'release' }
-    use 'tomtom/tcomment_vim'
+    use 'numToStr/Comment.nvim'
     use 'mattn/emmet-vim'
     use 'editorconfig/editorconfig-vim'
     use 'nvim-lualine/lualine.nvim'
@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
     use 'matze/vim-move'
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'seblj/nvim-tabline'
+    use 'JoosepAlviste/nvim-ts-context-commentstring'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',}
