@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
     -- colorscheme
     use 'rebelot/kanagawa.nvim'
 
-    use 'nvim-lua/plenary.nvim'
     use { 'neoclide/coc.nvim', branch = 'release' }
     -- use 'numToStr/Comment.nvim'
     use 'tomtom/tcomment_vim'
@@ -28,10 +27,6 @@ return require('packer').startup(function(use)
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',}
-
-    -- telescope
-    use 'nvim-telescope/telescope.nvim'
-    use 'nvim-telescope/telescope-file-browser.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
