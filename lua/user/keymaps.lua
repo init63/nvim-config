@@ -1,9 +1,19 @@
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
+-- global
+keymap('n', '<A-w>', ':w<CR>', opts)
+
+-- buffer
+keymap('n', '<A-q>', ':bdelete<CR>', opts)
+keymap('n', '<A-l>', ':bnext<CR>', opts)
+keymap('n', '<A-h>', ':bprevious<CR>', opts)
+
+-- standart
 keymap('n', '<C-t>', ':tabnew .<CR>', opts)
-keymap('n', '<C-Left>', 'gT', opts)
-keymap('n', '<C-Right>', 'gt', opts)
+keymap('n', '<C-h>', 'gT', opts)
+keymap('n', '<C-l>', 'gt', opts)
+
 
 -- nvim-tree
 keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
