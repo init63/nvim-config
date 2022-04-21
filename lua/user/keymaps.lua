@@ -5,6 +5,9 @@ keymap('n', '<C-t>', ':tabnew .<CR>', opts)
 keymap('n', '<C-Left>', 'gT', opts)
 keymap('n', '<C-Right>', 'gt', opts)
 
+-- nvim-tree
+keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+
 -- prettier
 keymap('v', '<leader>f', '<Plug>(coc-format-selected)', opts)
 keymap('n', '<leader>f', '<Plug>(coc-format-selected)', opts)
