@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-autopairs'
     use 'matze/vim-move'
     use { 'mg979/vim-visual-multi', branch = 'master' }
-    use 'seblj/nvim-tabline'
     use 'JoosepAlviste/nvim-ts-context-commentstring'
 
     -- treesitter
