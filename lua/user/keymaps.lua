@@ -15,6 +15,16 @@ keymap('n', '<C-l>', '<C-w>l', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
 keymap('n', '<S-l>', ':bnext<CR>', opts)
 
+-- move
+keymap('n', '<A-j>', ":MoveLine(1)<CR>", opts)
+keymap('n', '<A-k>', ":MoveLine(-1)<CR>", opts)
+keymap('v', '<A-j>', ":MoveBlock(1)<CR>", opts)
+keymap('v', '<A-k>', ":MoveBlock(-1)<CR>", opts)
+keymap('n', '<A-l>', ":MoveHChar(1)<CR>", opts)
+keymap('n', '<A-h>', ":MoveHChar(-1)<CR>", opts)
+keymap('v', '<A-l>', ":MoveHBlock(1)<CR>", opts)
+keymap('v', '<A-h>', ":MoveHBlock(-1)<CR>", opts)
+
 -- nvim-tree
 keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
