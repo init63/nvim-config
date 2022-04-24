@@ -26,7 +26,8 @@ return require('packer').startup(function(use)
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',}
-    
+    use 'windwp/nvim-ts-autotag'
+
     -- nvim-tree
     use 'kyazdani42/nvim-tree.lua'
     use { 'akinsho/bufferline.nvim', tag = "*" }
