@@ -3,6 +3,7 @@ local keymap = vim.api.nvim_set_keymap
 
 -- standart
 keymap('n', '<C-t>', ':tabnew .<CR>', opts)
+keymap('n', '<S-q>', ':bdelete<CR>', opts)
 
 -- navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
