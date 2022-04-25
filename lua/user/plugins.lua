@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use 'editorconfig/editorconfig-vim'
     use 'nvim-lualine/lualine.nvim'
     use 'windwp/nvim-autopairs'
-    use 'fedepujol/move.nvim'
+    use 'matze/vim-move'
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'JoosepAlviste/nvim-ts-context-commentstring'
 
