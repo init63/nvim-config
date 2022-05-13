@@ -20,6 +20,7 @@ return require("packer").startup(function(use)
     -- colorscheme
     use "rebelot/kanagawa.nvim"
 
+    -- other plugins
     use "numToStr/Comment.nvim"
     use "b0o/SchemaStore.nvim"
     use "mattn/emmet-vim"
@@ -29,8 +30,10 @@ return require("packer").startup(function(use)
     use "matze/vim-move"
     use { "mg979/vim-visual-multi", branch = "master" }
     use "JoosepAlviste/nvim-ts-context-commentstring"
+    use "lukas-reineke/indent-blankline.nvim"
+    use "lewis6991/gitsigns.nvim"
 
-    -- lsp
+    -- cmp
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer" -- buffer completions
     use "hrsh7th/cmp-path" -- path completions
@@ -38,6 +41,7 @@ return require("packer").startup(function(use)
     use "saadparwaiz1/cmp_luasnip" -- snippet completions
     use "hrsh7th/cmp-nvim-lsp"
 
+    -- lsp
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
