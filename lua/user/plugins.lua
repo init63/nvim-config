@@ -13,9 +13,8 @@ return require('packer').startup(function(use)
     -- colorscheme
     use 'rebelot/kanagawa.nvim'
 
-    use { 'neoclide/coc.nvim', branch = 'release' }
-    -- use 'numToStr/Comment.nvim'
-    use 'tomtom/tcomment_vim'
+    use 'numToStr/Comment.nvim'
+    use "b0o/SchemaStore.nvim"
     use 'mattn/emmet-vim'
     use 'editorconfig/editorconfig-vim'
     use 'nvim-lualine/lualine.nvim'
@@ -23,6 +22,20 @@ return require('packer').startup(function(use)
     use 'matze/vim-move'
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+    -- lsp
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-buffer' -- buffer completions
+    use 'hrsh7th/cmp-path' -- path completions
+    use 'hrsh7th/cmp-cmdline' -- cmdline completions
+    use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+    use 'hrsh7th/cmp-nvim-lsp'
+
+    use 'neovim/nvim-lspconfig' -- enable LSP
+    use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
+
+    -- snippets
+    use "L3MON4D3/LuaSnip" --snippet engine
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',}
