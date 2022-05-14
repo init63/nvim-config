@@ -18,7 +18,6 @@ o.fileformat = "unix"
 o.showmode = false
 
 -- Local Optiona
-wo.colorcolumn = "79"
 wo.number = true
 wo.cursorline = true
 

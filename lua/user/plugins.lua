@@ -21,6 +21,7 @@ return require("packer").startup(function(use)
     use "rebelot/kanagawa.nvim"
 
     -- other plugins
+    use "nvim-lua/plenary.nvim"
     use "numToStr/Comment.nvim"
     use "b0o/SchemaStore.nvim"
     use "mattn/emmet-vim"
@@ -44,6 +45,7 @@ return require("packer").startup(function(use)
     -- lsp
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
