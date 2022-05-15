@@ -11,6 +11,7 @@ local servers = {
     "jsonls",
     "tsserver",
     "pyright",
+    "stylelint_lsp",
 }
 
 local settings = {
@@ -66,6 +67,11 @@ for _, server in pairs(servers) do
         opts = vim.tbl_deep_extend("force", pyright_opts, opts)
     end
 
+    if server == "stylelint_lsp" then
+        local stylelint_lsp_opts = require "user.lsp.settings.stylelint-lsp"
+        opts = vim.tbl_deep_extend("force", stylelint_lsp_opts, opts)
+    end
+    
     lspconfig[server].setup(opts)
 end
 
