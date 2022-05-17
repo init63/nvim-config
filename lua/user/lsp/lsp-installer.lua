@@ -71,7 +71,7 @@ for _, server in pairs(servers) do
         local stylelint_lsp_opts = require "user.lsp.settings.stylelint-lsp"
         opts = vim.tbl_deep_extend("force", stylelint_lsp_opts, opts)
     end
-    
+
     lspconfig[server].setup(opts)
 end
 

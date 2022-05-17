@@ -1,7 +1,13 @@
 return {
+    filetypes = {
+        "css",
+        "less",
+        "scss",
+    },
     settings = {
         stylelintplus = {
-            validateOnType = true,
-        }
+            autoFixOnSave = true,
+            autoFixOnFormat = true,
+        },
     },
 }
