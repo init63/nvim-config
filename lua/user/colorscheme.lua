@@ -1,12 +1,12 @@
 -- Default options:
 require("kanagawa").setup {
     undercurl = true, -- enable undercurls
-    commentStyle = "NONE",
-    functionStyle = "NONE",
-    keywordStyle = "NONE",
-    statementStyle = "bold",
-    typeStyle = "NONE",
-    variablebuiltinStyle = "NONE",
+    commentStyle = { italic = false },
+    functionStyle = { bold = true },
+    keywordStyle = { italic = false },
+    statementStyle = { bold = true },
+    typeStyle = {},
+    variablebuiltinStyle = { italic = false },
     specialReturn = true, -- special highlight for the return keyword
     specialException = true, -- special highlight for exception handling keywords
     transparent = false, -- do not set background color
