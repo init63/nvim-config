@@ -18,7 +18,8 @@ return require("packer").startup(function(use)
     use "kyazdani42/nvim-web-devicons"
 
     -- colorscheme
-    use "rebelot/kanagawa.nvim"
+    -- use "rebelot/kanagawa.nvim"
+    use "ellisonleao/gruvbox.nvim"
 
     -- other plugins
     use "nvim-lua/plenary.nvim"

@@ -1,20 +1,16 @@
+-- setup must be called before loading the colorscheme
 -- Default options:
-require("kanagawa").setup {
-    undercurl = true, -- enable undercurls
-    commentStyle = { italic = false },
-    functionStyle = { bold = true },
-    keywordStyle = { italic = false },
-    statementStyle = { bold = true },
-    typeStyle = {},
-    variablebuiltinStyle = { italic = false },
-    specialReturn = true, -- special highlight for the return keyword
-    specialException = true, -- special highlight for exception handling keywords
-    transparent = false, -- do not set background color
-    dimInactive = false, -- dim inactive window `:h hl-NormalNC`
-    globalStatus = false, -- adjust window separators highlight for laststatus=3
-    colors = {},
-    overrides = {},
-}
-
--- setup must be called before loading
-vim.cmd "colorscheme kanagawa"
+require("gruvbox").setup({
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = false, -- will make italic comments and special strings
+  inverse = true, -- invert background for search, diffs, statuslines and errors
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  contrast = "", -- can be "hard" or "soft"
+  overrides = {},
+})
+vim.cmd("colorscheme gruvbox")
