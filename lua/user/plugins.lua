@@ -20,7 +20,8 @@ return require("packer").startup(function(use)
     -- colorscheme
     -- use "rebelot/kanagawa.nvim"
     -- use "ellisonleao/gruvbox.nvim"
-    use { "projekt0n/github-nvim-theme" }
+    -- use { "projekt0n/github-nvim-theme" }
+    use "Mofiqul/vscode.nvim"
 
     -- other plugins
     use "nvim-lua/plenary.nvim"
@@ -28,7 +29,7 @@ return require("packer").startup(function(use)
     use "b0o/SchemaStore.nvim"
     use "mattn/emmet-vim"
     use "editorconfig/editorconfig-vim"
-    use {"nvim-lualine/lualine.nvim", after = "github-nvim-theme"}
+    use { "nvim-lualine/lualine.nvim" }
     use "windwp/nvim-autopairs"
     use "matze/vim-move"
     use { "mg979/vim-visual-multi", branch = "master" }
